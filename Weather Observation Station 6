@@ -1,0 +1,18 @@
+-- Using LIKE Function 
+-- --------------------------------
+-- SELECT DISTINCT CITY FROM STATION
+-- WHERE CITY LIKE 'A%'
+-- OR CITY LIKE 'E%'
+-- OR CITY LIKE 'I%'
+-- OR CITY LIKE 'O%'
+-- OR CITY LIKE 'U%';
+-- --------------------------------
+-- Using REGEXP_LIKE Function 
+-- --------------------------------
+-- SELECT DISTINCT CITY FROM STATION
+-- WHERE REGEXP_LIKE(CITY, '^[aeiou]', 'i');
+-- --------------------------------
+-- Using LEFT Function
+-- --------------------------------
+SELECT DISTINCT CITY FROM STATION
+WHERE LEFT(CITY, 1) in ('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u');
